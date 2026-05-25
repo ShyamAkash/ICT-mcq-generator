@@ -1,0 +1,33 @@
+{
+  "QSin": "සම්බන්ධතා සමුදාය සැලැස්මක වස්තු දෙකක් අතර ඇති බහු-සිට-බහු සම්බන්ධතාවයක් වගු වලට සිතියම්ගත කිරීමේදී භාවිත වන සම්මත ක්‍රමවේදය කුමක්ද?",
+  "QEng": "When mapping a many-to-many relationship between two entities into a relational database schema, which of the following is the standard and recommended approach?",
+  "AnswersSin": [
+    "එක් වගුවකට අනෙක් වගුවේ ප්‍රාථමික යතුරට සම්බන්ධ වන විදේශීය යතුරක් එක් කිරීම",
+    "වගු දෙකෙහිම ඇති සියලුම ගුණාංග ඇතුළත් වන පරිදි වගු දෙකම තනි වගුවක් ලෙස ඒකාබද්ධ කිරීම",
+    "වගු දෙකෙහිම ප්‍රාථමික යතුරු සඳහා විදේශීය යතුරු ඇතුළත් වන පරිදි නව අතරමැදි වගුවක් නිර්මාණය කිරීම",
+    "එක් එක් වගුවේ ප්‍රාථමික නොවන යතුරු තීරුවක් මත අනන්‍ය දර්ශකයක් අර්ථ දැක්වීම",
+    "එක් වගුවක ඇති තනි පෙළ තීරුවක කොමා මඟින් වෙන් කරන ලද හඳුනාගැනීම් ලැයිස්තුවක් ලෙස සම්බන්ධිත දත්ත ගබඩා කිරීම"
+  ],
+  "AnswersEng": [
+    "Add a foreign key to one of the entity tables referencing the other table's primary key",
+    "Combine both entities into a single database table containing all attributes of both",
+    "Create an intermediate junction table that contains foreign keys referencing the primary keys of both entity tables",
+    "Define the relationship using a unique index on a non-primary key column in each table",
+    "Store the related records as a comma-separated list of IDs in a single text column within one of the tables"
+  ],
+  "AnsNo": 3,
+  "ExplSin": [
+    "එක් වගුවකට විදේශීය යතුරක් කෙලින්ම එක් කිරීම මඟින් නිරූපණය කළ හැක්කේ එකට-බහු හෝ එකට-එක සම්බන්ධතාවයක් පමණක් වන අතර එයින් බහු-සිට-බහු සම්බන්ධතාවයක් නිවැරදිව නිරූපණය කළ නොහැක.",
+    "වස්තු දෙකම තනි වගුවකට ඒකාබද්ධ කිරීම මඟින් අධික ලෙස දත්ත නැවත නැවත සිදුවීම සිදු වන අතර එය දත්ත සමුදාය සාමාන්‍යකරණ මූලධර්ම උල්ලංඝනය කරයි.",
+    "නව අතරමැදි වගුවක් නිර්මාණය කිරීම බහු-සිට-බහු සම්බන්ධතා සිතියම්ගත කිරීමේ සම්මත ක්‍රමය වන අතර එහිදී අතරමැදි වගුවේ එක් එක් පේළිය මඟින් වගු දෙක අතර ඇති සම්බන්ධතාවය නිරූපණය කරයි.",
+    "ප්‍රාථමික නොවන යතුරු මත අනන්‍ය දර්ශක අර්ථ දැක්වීම මඟින් බහු-සිට-බහු සම්බන්ධතාවයක් සිතියම්ගත කිරීම සිදු කළ නොහැක.",
+    "තනි පෙළ තීරුවක කොමා මඟින් වෙන් කරන ලද අගයන් ලෙස දත්ත ගබඩා කිරීම පළමු සාමාන්‍යකරණ රීතිය උල්ලංඝනය කරන අතර දත්ත විමසුම් කිරීම අතිශය අකාර්යක්ෂම කරයි."
+  ],
+  "ExplEng": [
+    "Adding a foreign key directly to one of the tables can only represent a one-to-many or one-to-one relationship, not a many-to-many relationship.",
+    "Combining both entities into a single table leads to massive data redundancy and violates database normalization principles.",
+    "Creating an intermediate junction table (also known as a bridge or associative table) is the standard way to map many-to-many relationships, where each row in the junction table represents an association between the two entities.",
+    "Defining unique indexes on non-primary keys does not facilitate or represent a many-to-many relationship mapping.",
+    "Storing multiple IDs in a single text column as a comma-separated list violates the first normal form (atomicity of values) and makes querying extremely inefficient."
+  ]
+}
