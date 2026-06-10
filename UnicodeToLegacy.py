@@ -458,8 +458,8 @@ def ConvertToLegacy(text: str) -> str:
     s = s.replace("ඡ්", "\u00fe")
     s = s.replace("දු", "\u00ff")
     s = s.replace("ර්\u200dණ", "\u201c")
-    s = s.replace("ණී", "\u0152")
-    s = s.replace("ණි", "\u201a")
+    s = s.replace("ණී", "Kss")
+    s = s.replace("ණි", "Ks")
     s = s.replace("ජී", "\u00d4")
     s = s.replace("ඡි", "\u00f0")
     s = s.replace("ඩි", "\u00e4")
@@ -559,7 +559,7 @@ def ConvertToLegacy(text: str) -> str:
 
     # Restore placeholders to final output characters
     s = s.replace("\uffe6", '"')
-    s = s.replace("'", "z")
+    #s = s.replace("'", "z")
     s = s.replace("\uffeb", "^")
     s = s.replace("\uffe9", "&")
     s = s.replace("\uffe4", ")")
