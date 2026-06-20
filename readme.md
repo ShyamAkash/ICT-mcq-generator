@@ -9,6 +9,8 @@ You type a topic and pick a question type. The app calls the Gemini API,
 gets back a structured question, and drops it straight into the correct
 `.docx` template — no manual copy-pasting or reformatting.
 
+<img width="928" height="795" alt="image" src="https://github.com/user-attachments/assets/996f3869-6387-43e2-8e6c-59e76cc2244e" />
+
 ---
 
 ## Features
