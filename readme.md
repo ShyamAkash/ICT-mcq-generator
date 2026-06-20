@@ -1,4 +1,4 @@
-# ICT from ABC — MCQ Generator
+# ictfromabc — MCQ Generator
 
 A desktop tool that generates bilingual (Sinhala / English) IT multiple-choice
 questions and exports them as ready-to-use Word documents, formatted to match
