@@ -2,12 +2,12 @@
 
 A desktop tool that generates bilingual (Sinhala / English) IT multiple-choice
 questions and exports them as ready-to-use Word documents, formatted to match
-**ictfromabc's exact MCQ paper layout** — same placeholders, same structure,
+**ictfromabc's exact MCQ paper layout** : same placeholders, same structure,
 same legacy Sinhala font encoding used in the original papers.
 
 You type a topic and pick a question type. The app calls the Gemini API,
 gets back a structured question, and drops it straight into the correct
-`.docx` template — no manual copy-pasting or reformatting.
+`.docx` template : no manual copy-pasting or reformatting.
 
 <img width="928" height="795" alt="image" src="https://github.com/user-attachments/assets/996f3869-6387-43e2-8e6c-59e76cc2244e" />
 
@@ -15,22 +15,22 @@ gets back a structured question, and drops it straight into the correct
 
 ## Features
 
-- **Bilingual by default** — every question, answer, and explanation is
+- **Bilingual by default** : every question, answer, and explanation is
   generated in both English and Sinhala.
 - **Three question types**, each with its own template and explanation
   style:
-  - **Normal** — standard 5-option MCQ, each option explained individually.
-  - **Statement** — three labelled statements (A/B/C), five combination
+  - **Normal** : standard 5-option MCQ, each option explained individually.
+  - **Statement** : three labelled statements (A/B/C), five combination
     answers (e.g. "A and B only"), each statement explained individually.
-  - **Code** — same structure as Normal, plus an embedded code snippet and a
+  - **Code** : same structure as Normal, plus an embedded code snippet and a
     single descriptive explanation paragraph.
-- **Matches ictfromabc's house format exactly** — output goes straight into
+- **Matches ictfromabc's house format exactly** : output goes straight into
   the existing `Question*.docx` templates, so fonts, spacing, and layout are
   identical to past papers.
-- **Legacy Sinhala font support** — Sinhala text is automatically converted
+- **Legacy Sinhala font support** : Sinhala text is automatically converted
   from Unicode to the legacy single-byte encoding ictfromabc's Word templates
   use, so it displays correctly without any manual font-fixing.
-- **Simple GUI** — no command line needed.
+- **Simple GUI** : no command line needed.
 - **Runs as a plain Python script or as a standalone Windows `.exe`.**
 
 ---
